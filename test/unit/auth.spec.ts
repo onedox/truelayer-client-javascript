@@ -69,7 +69,8 @@ test("Exchange code for token", async (t) => {
     sinon.stub(request, "post").returns(fixtures.authResponse);
     const expected: ITokenResponse = {
         access_token: "test_access_token",
-        refresh_token: "test_refresh_token"
+        refresh_token: "test_refresh_token",
+        expires_in: 3600
     };
     const actual = await client.exchangeCodeForToken("https://test.com", "dummy_code");
     t.deepEqual(actual.access_token, expected.access_token, "Access token not as expected");
