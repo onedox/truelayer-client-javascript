@@ -71,3 +71,5 @@ deploy/releases/*.yaml
 
 # .cache directories
 **/.cache
+
+package-lock.json
