@@ -1,4 +1,4 @@
-
+[![Known Vulnerabilities](https://snyk.io/test/github/onedox/truelayer-client-javascript/badge.svg)](https://snyk.io/test/github/onedox/truelayer-client-javascript)
 
 <p align="center">
 	<a href="https://truelayer.com">
