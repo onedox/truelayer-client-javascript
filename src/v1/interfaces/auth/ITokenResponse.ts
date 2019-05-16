@@ -9,4 +9,6 @@ export interface ITokenResponse {
     access_token: string;
     /** A long lived code use to obtain a new access_token when expired. It will be returned only if the scope offline_access was requested */
     refresh_token: string;
+    /** access_token validity in seconds */
+    expires_in: number;
 }

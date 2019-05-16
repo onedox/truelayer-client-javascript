@@ -129,7 +129,8 @@ export class AuthAPIClient {
             const parsedResponse: IAuthResponse = JSON.parse(response);
             return {
                 access_token: parsedResponse.access_token,
-                refresh_token: parsedResponse.refresh_token
+                refresh_token: parsedResponse.refresh_token,
+                expires_in: parsedResponse.expires_in
             };
         } catch (error) {
             throw new ApiError(error);
@@ -163,7 +164,8 @@ export class AuthAPIClient {
             const parsedResponse: IAuthResponse = JSON.parse(response);
             return {
                 access_token: parsedResponse.access_token,
-                refresh_token: parsedResponse.refresh_token
+                refresh_token: parsedResponse.refresh_token,
+                expires_in: parsedResponse.expires_in
             };
         } catch (error) {
             throw new ApiError(error);
