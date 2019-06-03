@@ -2,6 +2,8 @@ export { AuthAPIClient } from "./src/v1/AuthAPIClient";
 export { DataAPIClient } from "./src/v1/DataAPIClient";
 export { StatusAPIClient } from "./src/v1/StatusAPIClient";
 export { Constants } from "./src/v1/Constants";
+export { ApiError } from "./src/v1/APIError";
+
 export { IAccount } from "./src/v1/interfaces/data/IAccount";
 export { IBalance } from "./src/v1/interfaces/data/IBalance";
 export { IInfo } from "./src/v1/interfaces/data/IInfo";
